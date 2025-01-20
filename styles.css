@@ -1,0 +1,174 @@
+
+.heading {
+    font-family: "Bangers", serif;
+font-weight: 400;
+font-style: normal;
+    
+    
+    display: flex;
+    justify-content: center;
+    font-size: 6rem;
+    animation: flashColors 2s infinite;
+       
+    }
+
+    
+
+    @keyframes flashColors {
+        0% { color: red; }
+        20% { color: blue; }
+        40% { color: green; }
+        60% { color: yellow; }
+        80% { color: purple; }
+        100% { color: orange; }
+    }
+
+/* Container for socials and about text */
+.container {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically within the viewport */
+    height: 100vh; /* Full viewport height */
+    padding: 1rem; /* Add some padding for small screens */
+    box-sizing: border-box; /* Include padding in the height */
+}
+
+/* Social buttons centered */
+.socials {
+    display: flex;
+    gap: 1rem; /* Add space between icons */
+    margin-bottom: auto; /* Push down the .about section */
+}
+
+/* About container below socials */
+.about-container {
+    display: flex;
+    text-align: center; /* Center the text inside */
+    max-width: 600px; /* Limit the width for better readability */
+    display: block; /* Ensure the container is displayed */
+    visibility: visible; 
+}
+
+/* Responsive text styling */
+
+
+.about {
+    font-size: 2rem;
+    margin-bottom: 12rem;
+    text-indent: 2rem;
+    text-align: justify;
+    text-align-last: center;
+    
+}
+
+
+
+
+
+
+    html {  background-image: url('amalgamation-higher-up.png');
+        background-size: cover; /* Makes the image cover the entire area */
+        background-position: center; /* Centers the image */
+        background-repeat: no-repeat; /* Prevents tiling */
+    }
+
+    body {
+        cursor: url("smiling\ shit\ small.png"), auto;
+    }
+    
+    .poop {
+    position: absolute;
+    top: calc(10% + 80vh * var(--y-position));
+    left: -100px;
+    width: 50px;
+    height: auto;
+    animation: flyAcross 5s linear infinite;
+}
+
+@keyframes flyAcross {
+    0% {
+        transform: translateX(0) rotate(0deg);
+    }
+    100% {
+        transform: translateX(110vw) rotate(3600deg);
+    }
+}
+
+.poop:nth-child(1) { --y-position: 0.23; animation-delay: 0s; }
+.poop:nth-child(2) { --y-position: 0.67; animation-delay: 1.4s; }
+.poop:nth-child(3) { --y-position: 0.12; animation-delay: 2.7s; }
+.poop:nth-child(4) { --y-position: 0.89; animation-delay: 3.2s; }
+.poop:nth-child(5) { --y-position: 0.45; animation-delay: 4.8s; }
+
+/* Make the animation duration slightly different for each poop */
+.poop:nth-child(1) { animation-duration: 4.5s; }
+.poop:nth-child(2) { animation-duration: 5.2s; }
+.poop:nth-child(3) { animation-duration: 4.8s; }
+.poop:nth-child(4) { animation-duration: 5.5s; }
+.poop:nth-child(5) { animation-duration: 4.2s; }
+
+html {
+background-image: url('amalgamation-higher-up.png');
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+margin: 0;
+padding: 0;
+overflow: hidden;
+min-height: 100vh;
+}
+
+body {
+cursor: url("smiling\ shit\ small.png"), auto;
+margin: 0;
+padding: 0;
+overflow: hidden;
+min-height: 100vh;
+}
+
+.poop {
+position: fixed; /* Change to fixed */
+top: calc(10% + 80vh * var(--y-position));
+left: -100px;
+width: 50px;
+}
+
+.lightning {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    pointer-events: none;
+    animation: lightning 5s infinite;
+    z-index: 1;
+}
+
+@keyframes lightning {
+    0% { background-color: rgba(255, 255, 255, 0); }
+    2% { background-color: rgba(255, 255, 255, 0.5); }
+    3% { background-color: rgba(255, 255, 255, 0); }
+    6% { background-color: rgba(255, 255, 255, 0.5); }
+    8% { background-color: rgba(255, 255, 255, 0); }
+}
+
+.telegram {
+    height: 3rem;
+    width: 3rem;
+}
+
+
+
+
+
+.socials img {
+    height: 3rem; /* Adjust the height as needed */
+    object-fit: contain; /* Ensures the images retain their aspect ratio */
+    
+   
+    border-radius: 50%;
+    
+}
+
